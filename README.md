@@ -12,9 +12,11 @@
 - реальну аналогію;
 - приклади реалізації на різних мовах.
 
----
 
 ## 📦 Список паттернів
 
 ### Creational
 - [Factory Method](./creational//factory-method/README.md)
+
+## Translations
+- [English](https://github.com/maplemap/design-patterns/tree/main)
