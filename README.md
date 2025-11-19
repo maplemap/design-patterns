@@ -1,20 +1,24 @@
 # Design Patterns — Practical Examples
 
-Цей репозиторій містить практичні приклади патернів проєктування на  
+This repository contains practical examples of design patterns implemented in  
 - **JavaScript**
 - **TypeScript**
 - **Python**
 
-Мета — не просто пояснити теорію, а показати **живі приклади**, які можна запускати, змінювати і переносити у реальні проєкти.
-Кожен патерн містить:
-- короткий опис;
-- проблему, яку він вирішує;
-- реальну аналогію;
-- приклади реалізації на різних мовах.
+The goal is not just to explain the theory, but to provide **real, runnable examples** that you can execute, modify, and adapt to real-world projects.
 
----
+Each pattern includes:
+- a short explanation;
+- the problem it solves;
+- a real-life analogy;
+- implementation examples in different languages.
 
-## 📦 Список паттернів
+
+## 📦 List of Patterns
 
 ### Creational
-- [Factory Method](./creational//factory-method/README.md)
+- [Factory Method](./creational/factory-method/README.md)
+
+
+## Translations
+- [Ukrainian](https://github.com/maplemap/design-patterns/tree/ua-translation)

@@ -1,43 +1,43 @@
 # Factory Method
 
-## Що це
-Патерн, який переносить створення об’єктів у спеціальний метод — фабрику.  
-Клієнтський код більше не вирішує сам, який клас створювати.
+## What It Is
+A design pattern that moves object creation into a dedicated method — the factory.  
+Client code no longer decides which concrete class to instantiate.
 
-## Яку проблему вирішує
-У системі потрібно створювати об'єкти одного сімейства (транспорт, нотифікації, віджети), але:
+## The Problem It Solves
+Your system needs to create objects of the same family (transport, notifications, widgets), but:
 
-- у різних частинах коду ти сам створюєш конкретні класи (new Truck(), new EmailNotification(), new SystemWidget()), і тому твій код сильно прив’язаний до конкретних реалізацій;
-- скрізь зʼявляються `if/switch` для вибору типу;
-- важко додавати нові реалізації, бо потрібно змінювати існуючий код.
+- in different parts of the code you manually instantiate concrete classes (`new Truck()`, `new EmailNotification()`, `new SystemWidget()`), making the code tightly coupled to specific implementations;
+- `if/switch` blocks appear everywhere to determine the type;
+- adding new implementations is difficult because it requires modifying existing code.
 
-Це призводить до жорсткого зв’язування з конкретними класами й порушення принципу відкритості/закритості (OCP).
+This leads to strong coupling with concrete classes and violates the Open/Closed Principle (OCP).
 
-## Як вирішується проблема
-Factory Method виділяє створення об'єктів в окремий метод (фабричний метод),  
-який повертає абстракцію — спільний інтерфейс або базовий клас.
+## How the Problem Is Solved
+Factory Method extracts object creation into a separate method (the factory method)  
+that returns an abstraction — a shared interface or a base class.
 
-Підкласи або окремі фабрики визначають, який саме конкретний об’єкт створити.  
-Клієнтський код працює тільки з абстракцією і не залежить від реалізацій.
+Subclasses or dedicated factory classes decide which concrete object to create.  
+Client code works only with the abstraction and does not depend on specific implementations.
 
-## Аналогія з життя
-Уяви, що ти в піцерії.  
-Ти кажеш:  
-“_Дайте мені піцу **Маргариту**_”.
+## Real-Life Analogy
+Imagine you're in a pizzeria.  
+You say:  
+“*Give me a **Margherita** pizza*.”
 
-І не думаєш:
+You don’t think about:
 
-- який соус,
-- скільки грамів тіста,
-- який сир,
-- яку температуру виставити.
+- which sauce is used,
+- how much dough is needed,
+- which cheese to take,
+- what temperature to set.
 
-Ти просто отримуєш готову піцу.
+You simply get a ready pizza.
 
-Тут фабричний метод == кухня, яка вирішує, що і як створити.  
-Ти == клієнт, якому не важливі деталі.
+The factory method == the kitchen that decides what and how to create.  
+You == the client who doesn't care about the details.
 
-## Приклади
+## Examples
 - [JavaScript](./javascript/)
 - [TypeScript](./typescript/)
 - [Python](./python/)
