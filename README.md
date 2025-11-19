@@ -21,4 +21,4 @@ Each pattern includes:
 
 
 ## Translations
-- [Ukrainian](https://github.com/maplemap/design-patterns/tree/ua-translation)
+- [Ukrainian](https://github.com/maplemap/design-patterns/tree/translations/ua)
