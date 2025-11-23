@@ -16,7 +16,21 @@
 ## 📦 Список паттернів
 
 ### Creational
-- [Factory Method](./creational//factory-method/README.md)
+- [Factory Method<sup>*</sup>](./creational/factory-method/README.md)
+- [Abstract Factory<sup>*</sup>](./creational/abstract-factory/README.md)
+
+<sup>*</sup> - _є в книзі GoF “Design Patterns: Elements of Reusable Object-Oriented Software”_
+
+
+## 🏃 Запуск паттернів в консолі
+для ts прикладів - `make run-ts pattern={path-to-the pattern}`
+для js прикладів - `make run-js pattern={path-to-the pattern}`
+для pyton прикладів - `make run-py pattern={path-to-the pattern}`
+
+Наприклад
+```
+make run-ts pattern=creational/abstract-factory
+```
 
 ## Translations
 - [English](https://github.com/maplemap/design-patterns/tree/main)

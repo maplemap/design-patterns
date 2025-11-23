@@ -1,4 +1,4 @@
-from notifications.factory import notification_factory
+from factory import notification_factory
 
 def notify_user(channel: str, user: str, message: str):
     notifier = notification_factory(channel)
