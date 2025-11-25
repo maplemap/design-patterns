@@ -34,3 +34,7 @@ make run-ts pattern=creational/abstract-factory
 
 ## Translations
 - [English](https://github.com/maplemap/design-patterns/tree/main)
+
+## Ресурси
+- **Patterns Book**  
+https://www.patterns.dev/vanilla/
