@@ -3,11 +3,11 @@ import {StripePayment} from "./providers/stripe-payment";
 import {PaypalPayment} from "./providers/paypal-payment";
 import {LiqpayPayment} from "./providers/liqpay-payment";
 
-export type Provider = 'stripe' | 'paypal' | 'ligpay'
+export type PaymentProvider = 'stripe' | 'paypal' | 'ligpay'
 
 // Factory Method announcement
 class PaymentFactory {
-    static create(provider: Provider): Payment {
+    static create(provider: PaymentProvider): Payment {
         switch (provider) {
             case "stripe":
                 return new StripePayment()
@@ -19,7 +19,7 @@ class PaymentFactory {
     }
 }
 
-async function processOrder(amount: number, provider: Provider) {
+async function processOrder(amount: number, provider: PaymentProvider) {
     const payment = PaymentFactory.create(provider)
     await payment.pay(amount)
 }
